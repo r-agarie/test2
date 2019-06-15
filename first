@@ -1,2 +1,10 @@
 //this is test file
 //test
+// まずは code エディタをりようできるようにするためにパスをせってい
+$home
+ls -la　// .bash_profile のファイルがあるかを確認する
+vi .bash_profile　//なければ作成して開く
+// 次の一行を加える
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+source ~/.bash_profile　// 設定したパスを反映させる
+// これで code コマンドが利用できるので以下でGitの設定ファイルを確認する
