@@ -17,3 +17,6 @@ git reset --hard コミットハッシュ値
 // git mylog のこまんどを使えるようにする
 git config --global alias.mylog 'log --oneline --graph --decorate'
 これで上記をとうろくしてmylogがつかえる様になる
+
+// マージ履歴をlogに反映するばあいは以下でマージする
+git merge new2 --no-ff	
