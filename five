@@ -1,2 +1,19 @@
 // おさらい
 ブランチを切って新しいファイルを作成してマージするまで
+
+//　2019/07/06　本日の内容
+local環境でmasterにマージする
+masterブランチに移動して取り込みたいブランチをmargeする
+そのままのmargeだと、ブランチに一直線に追加するイメージ。
+// まーじする
+git marge 取り込むブランチ
+
+// logの確認
+git log --oneline --graph --decorate
+
+// マージをもどしたい
+git reset --hard コミットハッシュ値
+
+// git mylog のこまんどを使えるようにする
+git config --global alias.mylog 'log --oneline --graph --decorate'
+これで上記をとうろくしてmylogがつかえる様になる
