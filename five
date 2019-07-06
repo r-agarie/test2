@@ -35,3 +35,25 @@ git push --set-upstream origin new3
 次にどのブランチからどのブランチにプルリクエストを作成するかを選択
 緑のボタンを押していけばプルリクが作成できる。
 
+//  コンフリクトを起こす
+コンフリクトさせるためのブランチを作成しておく
+git checkout -b conflict
+
+// addとこみっとを同時に行う
+どこかファイルを編集してコミットする
+git commit -am "conflict用"
+
+// ブランチの差分を確認する
+git diff master conflict
+
+//　コマンドラインから目で確認できるDiffツールを立ち上げる
+git difftool master conflict
+
+//masterでもファイルを編集する
+コンフリクトを起こすために、元のmasterブランチで同じファイルを編集してコミットする
+その後に、masterにconflictブランチをコミットするとコンフリクトが起こる。
+
+//マージツールの立ち上げ
+git mergetool
+ツールの左からLocal、もともとのmaster、masterでの追加分
+と表示されていて必要な部分を選択して保存する。
