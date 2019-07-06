@@ -57,3 +57,14 @@ git difftool master conflict
 git mergetool
 ツールの左からLocal、もともとのmaster、masterでの追加分
 と表示されていて必要な部分を選択して保存する。
+
+// Gitにコミットしないlogなどのファイルが出た場合
+コミットしないためのファイルを記載するための
+.gitignore　ファイルを作成してそこに記載する
+
+記載内容の例
+.DS_Store		[一つファイルの場合]
+log/			[フォルダの場合]
+*.orig			[拡張子すべての場合]
+
+作った　.gitignore　ファイルをコミットする
