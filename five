@@ -20,3 +20,18 @@ git config --global alias.mylog 'log --oneline --graph --decorate'
 
 // マージ履歴をlogに反映するばあいは以下でマージする
 git merge new2 --no-ff	
+
+//push 
+対象ブランチにチェックアウトしてgit pushだけでもできる
+git push --set-upstream origin new3
+
+//　画面でブランチを作る
+ブランチを切り替えるセレクトの部分に、サーチのフォームがあるので、
+そこに新しいブランチ名を入力するとCreate branchがでてくる。
+ファイルを新規作成して、ファイル名、中身を記載し、画面したからコミットする。
+
+// 画面で pull request 
+プルリクエスト画面に移動し、NewPullRequestボタンを押す
+次にどのブランチからどのブランチにプルリクエストを作成するかを選択
+緑のボタンを押していけばプルリクが作成できる。
+
